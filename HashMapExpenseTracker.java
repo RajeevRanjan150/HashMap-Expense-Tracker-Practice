@@ -1,4 +1,5 @@
 import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
 
 class HashMapExpenseTracker {
@@ -37,7 +38,7 @@ class HashMapExpenseTracker {
           break;
         case 3:
           i=1;
-          for(HashMap.Entry<String, Integer> entry : expenses.entrySet()) {
+          for(Map.Entry<String, Integer> entry : expenses.entrySet()) {
             System.out.println(i+". "+entry.getKey()+": "+entry.getValue());
             i++;
           }
